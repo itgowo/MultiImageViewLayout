@@ -11,6 +11,8 @@
 1.评论布局（自定义TextView出门右转，处理了很多点击事件，改改就行了）
 2.点赞布局（原理和评论的自定义TextView一样，都是用的SpannableString）
 3.图片列表（当前工程是源码，理论上没有数量限制，和listView配合使用也很好，缓存也自己处理了）
+
+
 ![](https://github.com/hnsugar/MultiImageViewLayout/blob/master/jdfw.gif)
 ![](https://github.com/hnsugar/MultiImageViewLayout/blob/master/picture.png)
 ## 使用方法
