@@ -1,15 +1,15 @@
-
 # MultiImageViewLayout（朋友圈 图片列表）
 ## 一：前提：吐槽一下，可以忽略
 #### 最近写了一个类似朋友圈的项目，拿到项目工程导入后傻眼了，之前的人三个月写了什么啊，气死了，显示几张图片的布局竟然用了一个Imageview和两个GridView控制显隐来达到，大小什么的显示问题多多，界面整体刷新还不是局部的，各种错误数据，等，此处省略十万字。。。。。于是开始了重写朋友圈之路，二手的东西真心不好接，先让我哭一会( ▼-▼ )。
 
 ## 二：说明
 
-#### 我是将朋友圈分成了几个独立模块单独自定义的View，通过回调完成交互，耦合性算是非常低了，主要有以下及部分：
-多图展示区分单张图自适应，两列，三列显示，多图片数量没具体要求，最好别超过9个
+#### 我是将朋友圈分成了几个独立模块单独自定义的View，通过回调完成交互，耦合性算是非常低了，主要有以下及部分：多图展示区分单张图自适应，两列，三列显示，多图片数量没具体要求，最好别超过9个。
 
 1.评论布局（自定义TextView出门右转，处理了很多点击事件，改改就行了）
+
 2.点赞布局（原理和评论的自定义TextView一样，都是用的SpannableString）
+
 3.图片列表（当前工程是源码，理论上没有数量限制，和listView配合使用也很好，缓存也自己处理了）
 
 
@@ -48,11 +48,17 @@ public class MainActivity extends Activity {
 
         mMultiImageViewLayout = (MultiImageViewLayout) findViewById(R.id.multiimage);
         mMultiImageViewLayout.setList(mStrings);
-        mMultiImageViewLayout.setOnItemClickListener(new MultiImageViewLayout.OnItemClickListener() {
+         mMultiImageViewLayout.setOnItemClickListener(new MultiImageViewLayout.OnItemClickListener() {
             @Override
-            public void onItemClick(View imageview, int PressImagePosition) {
-                System.out.println("imageview = [" + imageview + "], PressImagePosition = [" + PressImagePosition + "]");
+            public void onItemClick(View view, int PressImagePosition, float PressX, float PressY) {
+                System.out.println("view = [" + view + "], PressImagePosition = [" + PressImagePosition + "], PressX = [" + PressX + "], PressY = [" + PressY + "]");
             }
+
+            @Override
+            public void onItemLongClick(View view, int PressImagePosition, float PressX, float PressY) {
+                System.out.println("view = [" + view + "], PressImagePosition = [" + PressImagePosition + "], PressX = [" + PressX + "], PressY = [" + PressY + "]");
+            }
+
         });
     }
 }
