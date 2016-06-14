@@ -15,6 +15,7 @@
 
 ![](https://github.com/hnsugar/MultiImageViewLayout/blob/master/jdfw.gif)
 ![](https://github.com/hnsugar/MultiImageViewLayout/blob/master/picture.png)
+![](http://i.imgur.com/BDFkB82.png)
 ## 使用方法
 #### 代码：  
 ##### 主要是 mMultiImageViewLayout.setList(mStrings)和 mMultiImageViewLayout.setOnItemClickListener
