@@ -8,7 +8,7 @@
 
 1.评论布局（自定义TextView出门右转，处理了很多点击事件，改改就行了）
 
-[Lu_comment_TextView](https://github.com/hnsugar/Lu_comment_TextView//)
+[Lu_comment_TextView](https://github.com/hnsugar/Lu_comment_TextView/)
 
 [Lu_PingLunLayout](https://github.com/hnsugar/lu_pinglunlayout/)
 
