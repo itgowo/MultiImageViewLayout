@@ -4,14 +4,23 @@
 
 ## 二：说明
 
-#### 我是将朋友圈分成了几个独立模块单独自定义的View，通过回调完成交互，耦合性算是非常低了，主要有以下及部分：多图展示区分单张图自适应，两列，三列显示，多图片数量没具体要求，最好别超过9个。
+#### 我是将朋友圈分成了几个独立模块单独自定义的View，通过回调完成交互，耦合性算是非常低了，主要有以下及部分：多图展示区分单张图自适应，两列，三列显示，多图片数量没具体要求，最好别超过9个。 自定义布局用的LinearLayout的ddView等方法
 
 1.评论布局（自定义TextView出门右转，处理了很多点击事件，改改就行了）
+
+[Lu_comment_TextView](https://github.com/hnsugar/Lu_comment_TextView//)
+
+[Lu_PingLunLayout](https://github.com/hnsugar/lu_pinglunlayout/)
 
 2.点赞布局（原理和评论的自定义TextView一样，都是用的SpannableString）
 
 3.图片列表（当前工程是源码，理论上没有数量限制，和listView配合使用也很好，缓存也自己处理了）
 
+[MultiImageViewLayout](https://github.com/hnsugar/MultiImageViewLayout/)
+
+我也是找第三方例子不好找，于是自己写了一个，我和同事还打算做一套IM系统，app和后台都要做，我们自己定义sdk，我们还要封装H5，类似hbuilder如果有什么问题，可以联系我，
+
+QQ:1264957104
 
 ![](https://github.com/hnsugar/MultiImageViewLayout/blob/master/jdfw.gif)
 ![](https://github.com/hnsugar/MultiImageViewLayout/blob/master/picture.png)
