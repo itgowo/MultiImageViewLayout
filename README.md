@@ -14,6 +14,9 @@
 
 2.点赞布局（原理和评论的自定义TextView一样，都是用的SpannableString）
 
+[PraiseTextView](https://github.com/hnsugar/PraiseTextView/)
+ 
+ 
 3.图片列表（当前工程是源码，理论上没有数量限制，和listView配合使用也很好，缓存也自己处理了）
 
 [MultiImageViewLayout](https://github.com/hnsugar/MultiImageViewLayout/)
