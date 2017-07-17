@@ -246,7 +246,7 @@ public class MultiImageViewLayout extends LinearLayout {
                 if (mOnItemClickListener != null) {
                     mOnItemClickListener.onItemLongClick(v, (Integer) v.getTag(R.id.FriendLife_Position),PressX[0],PressY[0]);
                 }
-                return false;
+                return true;
             }
         });
         mImageView.setId(url.hashCode());
